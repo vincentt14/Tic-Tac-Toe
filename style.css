@@ -122,10 +122,11 @@ body{
     width: 100%;
     text-align: center;
     z-index: 5;
+    transition: all 0.3s ease;
 }
 
 .details span:first-child{
-    color: white;
+    color: var(--biru);
 }
 
 .details .slider{
@@ -134,9 +135,20 @@ body{
     left: 0;
     width: 50%;
     height: 100%;
-    background: var(--biru);
+    background: var(--birutua);
     border-radius: 5px;
     z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.players.active span:first-child{
+    color: var(--biru);
+}
+.players.active span:nth-child(2){
+    color: var(--biru);
+}
+.players.active .slider{
+    left: 50%;
 }
 
 .play-board .play-area{

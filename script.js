@@ -3,7 +3,8 @@ const selectBox = document.querySelector(".select-box"),
 selectXBtn = selectBox.querySelector(".playerX"),
 selectOBtn = selectBox.querySelector(".playerO"),
 playBoard = document.querySelector(".play-board"),
-allBox = document.querySelectorAll("section span");
+allBox = document.querySelectorAll("section span"),
+players = document.querySelector(".players");
 
 // saat window di load
 window.onload = () =>{
@@ -21,6 +22,7 @@ window.onload = () =>{
     selectOBtn.onclick = () =>{ 
         selectBox.classList.add("hide");
         playBoard.classList.add("show");
+        players.setAttribute("class","players active")
     }
 }
 
@@ -28,7 +30,7 @@ let playerXIcon = "fas fa-times";
 let playerOIcon = "far fa-circle";
 
 function clickedBox(element){
-    if(){
-        
-    }
+    // if(){
+
+    // }
 }
