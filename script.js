@@ -22,7 +22,8 @@ window.onload = () =>{
     selectOBtn.onclick = () =>{ 
         selectBox.classList.add("hide");
         playBoard.classList.add("show");
-        players.setAttribute("class","players active")
+        // tambahin tiga kelas di elemen player
+        players.setAttribute("class","players active player")
     }
 }
 
@@ -30,7 +31,11 @@ let playerXIcon = "fas fa-times";
 let playerOIcon = "far fa-circle";
 
 function clickedBox(element){
-    // if(){
-
-    // }
+    if(players.classList.contains("player")){
+        // buat tambahin icon O pas ditekan
+        element.innerHTML = `<i class="${playerOIcon}"></i>`;
+    }else{
+        // buat tambahin icon X pas ditekan
+        element.innerHTML = `<i class = "${playerXIcon}"></i>`;
+    }
 }
